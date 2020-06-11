@@ -1,8 +1,7 @@
-prog:personnage.o main.o collision.o
-	gcc personnage.o main.o collision.o -o prog -lSDL -lSDL_image -lSDL_ttf -g
+prog:roto.o main.o 
+	gcc roto.o main.o  -o prog -lSDL -lSDL_ttf -lSDL_image -lSDL_mixer -lSDL_gfx -g 
 main.o:main.c
-	gcc -c main.c -g
-enigme.o:personnage.c
-	gcc -c personnage.c -g
-collision.o:collision.c
-	gcc -c collision.c -g
+	gcc -c main.c -g 
+enigmeavecfichier.o:roto.c
+	gcc -c roto.c -g 
+
